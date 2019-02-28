@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VezbiCas", "VezbiCas\VezbiCas.csproj", "{FA9E44CF-A458-40D2-8912-669E6DB55525}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VezbiCas3", "VezbiCas3\VezbiCas3.csproj", "{47B9F4CC-AFB0-44F1-9AC3-F8FF06FF8021}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FA9E44CF-A458-40D2-8912-669E6DB55525}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA9E44CF-A458-40D2-8912-669E6DB55525}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA9E44CF-A458-40D2-8912-669E6DB55525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47B9F4CC-AFB0-44F1-9AC3-F8FF06FF8021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47B9F4CC-AFB0-44F1-9AC3-F8FF06FF8021}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47B9F4CC-AFB0-44F1-9AC3-F8FF06FF8021}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47B9F4CC-AFB0-44F1-9AC3-F8FF06FF8021}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
