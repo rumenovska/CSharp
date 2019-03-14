@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ClassLibrary;
+
 
 namespace UseClassLibary
 {
@@ -10,7 +12,9 @@ namespace UseClassLibary
 	{
 		static void Main(string[] args)
 		{
-			
+			NewDog d = new NewDog();
+			d.Name = "aaaa";
+			Console.WriteLine(d.Name);
 		}
 	}
 }
