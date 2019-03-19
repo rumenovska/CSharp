@@ -21,7 +21,23 @@ namespace GenericCollections
 			this.FirstName = firstname;
 			this.LastName = lastname;
 			this.FavoriteMusicType = favMusicType;
+			this.FavoriteSong = new List<Song>();
 		}
 
+
+		public void GetFavoriteSong()
+		{
+			if(FavoriteSong.Count() == 0)
+			{
+				Console.WriteLine("");
+			}
+			else
+			{
+				foreach(var song in FavoriteSong)
+				{
+					Console.WriteLine($"{song.Title} {song.Genre} {song.Length}");
+				}
+			}
+		}
 	}
 }

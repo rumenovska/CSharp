@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 using System.Collections;
 namespace GenericCollections
 {
+	class Dog
+	{
+		public string Name { get; set; }
+		public int Age { get; set; }
+	}
 	class Program
+
 	{
 		static void PrintCollection(IEnumerable collection, string name)
 		{
@@ -88,20 +94,23 @@ namespace GenericCollections
 			//Console.WriteLine("---------------------------");
 
 			// Exercise 1
-			Dictionary<string, string> phoneBook = new Dictionary<string, string>() { { "Marija1", "070265852" }, { "Frosina2", "078635214" }, { "Simona3", "078635214" }, { "Jana4", "078635219" }, { "Biljana5", "072635219" } };
+			//Dictionary<string, string> phoneBook = new Dictionary<string, string>() { { "Marija1", "070265852" }, { "Frosina2", "078635214" }, { "Simona3", "078635214" }, { "Jana4", "078635219" }, { "Biljana5", "072635219" } };
 
-			//PrintCollection(phoneBook, "phoneBook");
-			string name = Console.ReadLine();
-			if(phoneBook.ContainsKey(name) == true)
-			{
-				Console.WriteLine(phoneBook[name]);
-			}
-			else
-			{
-				Console.WriteLine("Error!");
-			}
+			////PrintCollection(phoneBook, "phoneBook");
+			//string name = Console.ReadLine();
+			//if(phoneBook.ContainsKey(name) == true)
+			//{
+			//	Console.WriteLine(phoneBook[name]);
+			//}
+			//else
+			//{
+			//	Console.WriteLine("Error!");
+			//}
 
-			// Exercise 2
+			// LINQ
+			List<Dog> dogs = new List<Dog>();
+			
+
 
 
 			Console.ReadLine();

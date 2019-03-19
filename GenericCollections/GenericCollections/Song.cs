@@ -12,14 +12,16 @@ namespace GenericCollections
 		public int Length { get; set; }
 		public EnumGenre Genre { get; set; }
 
-		public Song()
+		public Song(string title, int length, EnumGenre genre)
 		{
-
+			this.Title = title;
+			this.Length = length;
+			this.Genre = genre;
 		}
 
 		public string SongInfo()
 		{
-			return $"Title {Title} Length {Length} ";
+			return $"Title {Title} Length {Length} Genre {Genre}";
 		}
 	}
 }
