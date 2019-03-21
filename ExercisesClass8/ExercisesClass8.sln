@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercisesClass8", "ExercisesClass8\ExercisesClass8.csproj", "{60F33068-C86E-4B7E-A6A1-88859B67E942}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SEDC.Quiz.Library", "SEDC.Quiz.Library\SEDC.Quiz.Library.csproj", "{7422D3C9-C25B-4C98-B987-FE47CFFCDCBB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{60F33068-C86E-4B7E-A6A1-88859B67E942}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60F33068-C86E-4B7E-A6A1-88859B67E942}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60F33068-C86E-4B7E-A6A1-88859B67E942}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7422D3C9-C25B-4C98-B987-FE47CFFCDCBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7422D3C9-C25B-4C98-B987-FE47CFFCDCBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7422D3C9-C25B-4C98-B987-FE47CFFCDCBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7422D3C9-C25B-4C98-B987-FE47CFFCDCBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
