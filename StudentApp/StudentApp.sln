@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AcademyManagementApp", "AcademyManagementApp\AcademyManagementApp.csproj", "{0CA0D87E-4A0D-4EC8-A819-F489BEE7FF76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{E12777F9-B6A8-4D1C-8E0E-FC8516953F91}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CA0D87E-4A0D-4EC8-A819-F489BEE7FF76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CA0D87E-4A0D-4EC8-A819-F489BEE7FF76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0CA0D87E-4A0D-4EC8-A819-F489BEE7FF76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0CA0D87E-4A0D-4EC8-A819-F489BEE7FF76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E12777F9-B6A8-4D1C-8E0E-FC8516953F91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E12777F9-B6A8-4D1C-8E0E-FC8516953F91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E12777F9-B6A8-4D1C-8E0E-FC8516953F91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E12777F9-B6A8-4D1C-8E0E-FC8516953F91}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FEAFF89D-0A3B-4B9F-89EA-8ABFF2D37A17}
+	EndGlobalSection
+EndGlobal
