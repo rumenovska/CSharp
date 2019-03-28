@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Class2", "Class2\Class2.csproj", "{1A2AF900-EA44-4057-948F-AF20B33FF501}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalLibrary", "AnimalLibrary\AnimalLibrary.csproj", "{82139526-3896-4D34-912F-120D4961A0A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Car", "Car\Car.csproj", "{C3F55556-E661-4ED8-8CFC-EEEDEE67384D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A2AF900-EA44-4057-948F-AF20B33FF501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A2AF900-EA44-4057-948F-AF20B33FF501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A2AF900-EA44-4057-948F-AF20B33FF501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A2AF900-EA44-4057-948F-AF20B33FF501}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82139526-3896-4D34-912F-120D4961A0A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82139526-3896-4D34-912F-120D4961A0A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82139526-3896-4D34-912F-120D4961A0A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82139526-3896-4D34-912F-120D4961A0A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3F55556-E661-4ED8-8CFC-EEEDEE67384D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3F55556-E661-4ED8-8CFC-EEEDEE67384D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3F55556-E661-4ED8-8CFC-EEEDEE67384D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3F55556-E661-4ED8-8CFC-EEEDEE67384D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {341458BB-ABBC-465A-B0A1-5C9B4B270811}
+	EndGlobalSection
+EndGlobal
