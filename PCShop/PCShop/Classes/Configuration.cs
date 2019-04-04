@@ -12,7 +12,7 @@ namespace PCShop.Classes
         public string Name { get; set; }
         public Dictionary<Part, int> Parts;
         public Dictionary<Module, int> Modules;
-        public Colors Colors{ get; set; }
+        public Colors BoxColor { get; set; }
         public Configuration()
         {
             this.Parts = new Dictionary<Part, int>();
@@ -20,7 +20,7 @@ namespace PCShop.Classes
         }
         public Configuration(Colors colors)
         {
-            this.Colors = colors;
+            this.BoxColor = colors;
             this.Parts = new Dictionary<Part, int>();
             this.Modules = new Dictionary<Module, int>();
 

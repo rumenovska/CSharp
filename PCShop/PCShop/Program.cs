@@ -84,7 +84,7 @@ namespace PCShop
             pc1.AddPartToProduct(p21, 1); //PC box
 
             //Console.WriteLine(pc1.Name);
-            //Console.WriteLine("Box color: {0}", pc1.BoxColor);
+            Console.WriteLine("Box color: {0}", pc1.BoxColor);
             //Console.WriteLine(pc1.GetPrice());
             //Console.WriteLine(pc1.GetPrice().PriceWithCurrency("EUR"));
             //pc1.SetDiscount(5); // 5%

@@ -9,6 +9,7 @@ namespace PCShop.Enums
     public enum Colors
     {
         Black,
-        BoxColor
+        Red,
+        Purple,
     }
 }
