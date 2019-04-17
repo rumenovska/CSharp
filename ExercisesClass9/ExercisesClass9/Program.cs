@@ -101,8 +101,17 @@ namespace ExercisesClass9
             Console.WriteLine("Compare if the 2 strings end on the same character");
             StringMagic(StringMagicCompare2, "Hi", "Hello");
 
+            
+            Console.WriteLine("----------------------------------------");
+            Trainer t1 = new Trainer();
+            Sms sms = new Sms();
+            Email email = new Email();
+            Facebook fb = new Facebook();
+            t1.EventHandler += sms.GetMessage;
+            t1.EventHandler += email.GetMessage;
+            t1.EventHandler += fb.GetMessage;
+            t1.ComposeMessage("Risto", 1, " Important information. This homework will take approximately 30 minutes!");
             Console.ReadLine();
-
 
         }
 
