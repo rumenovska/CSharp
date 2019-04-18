@@ -24,18 +24,9 @@ namespace Operators
         }
         public static Product operator + (Product p1, Product p2)
         {
-            Product product = new Product();
-            product.Name = $"{p1.Name} + {p2.Name}";
-            if(p1.Quantity > p2.Quantity)
-            {
-                product.Quantity = p1.Quantity;
-            }
-            else
-            {
-                product.Quantity = p2.Quantity;
-            }
-            product.Price = p1.Price + p2.Price;
-            return product;
+            var quantity= p1.Quantity > p2.Quantity? p1.Quantity : p2.Quantity; ;
+            return new Product($"{p1.Name} + {p2.Name}", quantity, p1.Price + p2.Price);
+           
         }
         public static Product operator -(Product p1, Product p2)
         {
@@ -138,6 +129,19 @@ namespace Operators
            
         }
         
-       
+        public static bool operator &(Product p1, Product p2)
+        {
+            return p1.Price > 0 && p2.Price > 0;
+        }
+
+        public static bool operator | (Product p1, Product p2)
+        {
+            return p1.Price > 0 || p2.Price > 0;
+        }
+
+        public static bool operator ^(Product p1, Product p2)
+        {
+            return p1.Price > 0 ^ p2.Price > 0;
+        }
     }
 }

@@ -34,6 +34,13 @@ namespace OperatorsDemo
 
             p2++.Print();
             p1--.Print();
+
+            bool p9 = p1 & p2;
+            Console.WriteLine(p9);
+            bool p10 = p1 | p2;
+            Console.WriteLine(p10);
+            bool p11 = p1 ^ p2;
+            Console.WriteLine(p11);
             Console.ReadLine();
         }
     }
