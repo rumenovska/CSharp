@@ -54,6 +54,7 @@ namespace ExercisesClass9
             Console.WriteLine("----------------------------------------");
             var newList = dogs.GetNfromList(2);
             PrintAnimals(newList);
+            Console.WriteLine("----------------------------------------");
             List<int> nums = new List<int>() {1,2,3,4,5,6,7 };
             List<bool> bools = new List<bool>() { true, false, true, false, false };
             PrintList(nums);
@@ -92,6 +93,7 @@ namespace ExercisesClass9
                     return false;
                 }
             };
+            
             Console.WriteLine("Compare 2 strings length");
             StringMagic(StringMagicCompare, "Hi", "Hello");
 
