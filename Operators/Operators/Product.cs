@@ -127,5 +127,17 @@ namespace Operators
             return new Product($"{p1.Name} + {a}", p1.Quantity+a, p1.Price);
         }
 
+        public static bool operator ==(Product p1, Product p2)
+        {
+            return p1.Name == p2.Name && p1.Price == p2.Price;
+            
+        }
+        public static bool operator !=(Product p1, Product p2)
+        {
+            return !(p1 == p2);
+           
+        }
+        
+       
     }
 }
