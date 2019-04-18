@@ -27,14 +27,11 @@ namespace ExercisesClass9
             List<Cat> cats = new List<Cat>() {c1, c2,c3 };
             List<Bird> birds = new List<Bird>() {b1,b2,b3 };
 
-            var mecheRace = dogs
+            var mecheRaces = dogs
                 .Where(x => x.Race == "Meche")
                 .ToList();
-            
-            foreach(var m in mecheRace)
-            {
-                m.Print();
-            }
+
+            PrintAnimals(mecheRaces);
             Console.WriteLine("----------------------------------------");
             var lastLazyCat = cats
                 .LastOrDefault(x => x.IsLazy);
@@ -47,11 +44,7 @@ namespace ExercisesClass9
                 .Where(x => x.IsWild && x.Age > 3)
                 .OrderBy(x => x.Name)
                 .ToList();
-
-            foreach (var b in wildBirds)
-            {
-                b.Print();
-            }
+            PrintAnimals(wildBirds);
             Console.WriteLine("----------------------------------------");
             string n = "Neshto";
             Console.WriteLine(n.GetFirstLetter());
@@ -60,21 +53,67 @@ namespace ExercisesClass9
             Console.WriteLine(num1.IsEven());
             Console.WriteLine("----------------------------------------");
             var newList = dogs.GetNfromList(2);
-            foreach(var d in newList)
-            {
-                d.Print();
-            }
+            PrintAnimals(newList);
+            Console.WriteLine("----------------------------------------");
             List<int> nums = new List<int>() {1,2,3,4,5,6,7 };
             List<bool> bools = new List<bool>() { true, false, true, false, false };
             PrintList(nums);
             PrintList(bools);
+            Console.WriteLine("----------------------------------------");
+            Func<string, string, bool> StringMagicCompare = (string1, string2) =>
+              {
+                  if (string1.Length == string2.Length)
+                  {
+                      return true;
+                  }
+                  else
+                  {
+                      return false;
+                  }
+              };
+            Func<string, string, bool> StringMagicCompare1 = (string1, string2) =>
+            {
+                if (string1.FirstOrDefault().ToString().ToLower() == string2.FirstOrDefault().ToString().ToLower())
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            };
+            Func<string, string, bool> StringMagicCompare2 = (string1, string2) =>
+            {
+                if (string1.LastOrDefault().ToString().ToLower() == string2.LastOrDefault().ToString().ToLower())
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            };
+            
+            Console.WriteLine("Compare 2 strings length");
+            StringMagic(StringMagicCompare, "Hi", "Hello");
 
+            Console.WriteLine("Compare if the 2 strings start on the same character");
+            StringMagic(StringMagicCompare1, "Hi", "Hello");
 
+            Console.WriteLine("Compare if the 2 strings end on the same character");
+            StringMagic(StringMagicCompare2, "Hi", "Hello");
 
-           
-
+            
+            Console.WriteLine("----------------------------------------");
+            Trainer t1 = new Trainer();
+            Sms sms = new Sms();
+            Email email = new Email();
+            Facebook fb = new Facebook();
+            t1.EventHandler += sms.GetMessage;
+            t1.EventHandler += email.GetMessage;
+            t1.EventHandler += fb.GetMessage;
+            t1.ComposeMessage("Risto", 1, " Important information. This homework will take approximately 30 minutes!");
             Console.ReadLine();
-
 
         }
 
@@ -95,6 +134,11 @@ namespace ExercisesClass9
                 animal.Print();
             }
         }
-
+        public static void StringMagic( Func<string, string, bool> stringMagic, string string1, string string2)
+        {
+            Console.WriteLine($"String 1: {string1} - String 2: {string2} || Result {stringMagic(string1, string2).ToString()}");
+        }
+        
+        
     }
 }
